@@ -1,0 +1,22 @@
+[
+  {
+    "question" : "How do we define a function in Python?",
+    "incorrect" : ["fun", "define", "function"],
+    "correct" : "def"
+  },
+  {
+    "question" : "How is the quizmaster communicating with the bristle bots?",
+    "incorrect" : ["WiFi", "Bluetooth", "USB"],
+    "correct" : "Radio"
+  },
+  {
+    "question" : "What does FDM stand for?",
+    "incorrect" : ["full design modelling", "fun design making", "factoring detail modelling"],
+    "correct" : "fused deposition modelling"
+  },
+  {
+    "question" : "How do we define a function in Python?",
+    "incorrect" : ["fun", "define", "function"],
+    "correct" : "def"
+  }
+]

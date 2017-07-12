@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Bristly Quiz",
+  "version": "0.1",
+  "icons": {
+  },
+  "permissions" : ["serial", "fullscreen"],
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+  "minimum_chrome_version": "28"
+}
