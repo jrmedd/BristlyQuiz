@@ -35,10 +35,10 @@ function displayQuestion() {
   });
 }
 
-$("#answers").on('click', function(e){
+$("#answers").on('click', 'a', function(e){
   e.preventDefault();
+  var clickedAnswer = $(this);
   $("#answers").hide();
-  var clickedAnswer = $(e.target);
   if (clickedAnswer.hasClass('correct')) {
     advanceTeam(currentTeam);
     $("#question").html("<h3>That's correct! You move for 2 seconds!</h3>").hide().fadeIn();

@@ -3,6 +3,7 @@
   "name": "Bristly Quiz",
   "version": "0.1",
   "icons": {
+    "1024" : "icon1024.png"
   },
   "permissions" : ["serial", "fullscreen"],
   "app": {
