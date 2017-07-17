@@ -2,9 +2,15 @@
 <html>
 <head>
   <title>Bristly Quiz</title>
+  <link type="text/css" href="frameworks/bootstrap.min.css">
 </head>
 <body>
-  <button class="team-advance" value="A">A</button>
+  <div id="quiz-area">
+    <div id="question">
+    </div>
+    <div id="answers">
+    </div>
+  </div>
   <div class="container">
     <div id="serial-widget" class="input-group">
       <div class="input-group-addon">Ports</div>
@@ -16,6 +22,7 @@
     </div>
   </div>
   <script src="frameworks/jquery.min.js"></script>
+  <script src="frameworks/bootstrap.min.js"></script>
   <script src="js/hardware.js"></script>
   <script src="js/quizLogic.js"></script>
 </body>
