@@ -16,6 +16,7 @@ function advanceTeam(team) {
 
 $.getJSON(chrome.runtime.getURL('js/teams.json'), function(teamInfo) {
   teams = teamInfo.teams;
+  displayQuestion();
 });
 
 function displayQuestion() {
@@ -53,5 +54,3 @@ $("#answers").on('click', 'a', function(e){
   }
   setTimeout(function() {progress ++; displayQuestion();}, 2000);
 });
-
-displayQuestion();

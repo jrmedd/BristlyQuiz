@@ -1,3 +1,17 @@
+@font-face {
+  src: url('../fonts/ExpertSans-Regular.ttf');
+  font-family: 'Expert Sans';
+  font-weight: 'regular';
+}
+body {
+  font-family: 'Expert Sans';
+  background: #00B7FF;
+  color: #fff;
+}
+#answers a {
+  color: #FABE10;
+  font-size: 1.5em;
+}
 #answers {
   display: none;
 }
