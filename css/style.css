@@ -1,0 +1,11 @@
+#answers {
+  display: none;
+}
+select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+nav.navbar.navbar-default.navbar-fixed-bottom {
+  padding: 0.55em;
+}

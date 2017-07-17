@@ -22,7 +22,7 @@ function displayQuestion() {
   $.getJSON(chrome.runtime.getURL('js/questions.json'), function(questions) {
     currentTeam = teams[progress%teams.length];
     currentQuestion = questions[progress];
-    $("#question").html("<h3>For team "+currentTeam+":<br>"+currentQuestion.question+"</h3>");
+    $("#question").html("<h3>For team "+currentTeam+":<br>"+currentQuestion.question+"</h3>").hide().fadeIn();
     var randomIndex = getRandomArbitrary(0, currentQuestion.incorrect.length)|0;
     $("#answers").empty();
     $.each(currentQuestion.incorrect, function(idx, value){
@@ -31,18 +31,20 @@ function displayQuestion() {
       }
       $("#answers").append('<a class="incorrect" href="#">'+value+'</a><br>');
     });
+    $("#answers").fadeIn();
   });
 }
 
 $("#answers").on('click', function(e){
   e.preventDefault();
+  $("#answers").hide();
   var clickedAnswer = $(e.target);
   if (clickedAnswer.hasClass('correct')) {
     advanceTeam(currentTeam);
-    $("#question").html("<h3>That's correct! You move for 2 seconds!</h3>");
+    $("#question").html("<h3>That's correct! You move for 2 seconds!</h3>").hide().fadeIn();
   }
   else if (clickedAnswer.hasClass('incorrect')) {
-    $("#question").html("<h3>Too bad, everyone else moves, you stay still!</h3>");
+    $("#question").html("<h3>Too bad, everyone else moves, you stay still!</h3>").hide().fadeIn();
     $.each(teams, function(idx, teamName) {
       if (teamName != currentTeam) {
         advanceTeam(teamName);

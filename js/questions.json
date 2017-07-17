@@ -15,8 +15,8 @@
     "correct" : "fused deposition modelling"
   },
   {
-    "question" : "How do we define a function in Python?",
-    "incorrect" : ["fun", "define", "function"],
-    "correct" : "def"
+    "question" : "What does the transistor do in our circuit?",
+    "incorrect" : ["stop things exploding", "lets us use radio", "allows us to use less current to power our motor"],
+    "correct" : "allows us to use more current to power our motor"
   }
 ]

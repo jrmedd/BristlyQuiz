@@ -2,23 +2,30 @@
 <html>
 <head>
   <title>Bristly Quiz</title>
-  <link type="text/css" href="frameworks/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="frameworks/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div id="quiz-area">
-    <div id="question">
+  <div id="quiz-area" class="container-fluid">
+    <div class="row">
+      <div id="question" class="col-lg-8 col-lg-offset-2 col-md-6 col-md-ofset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+      </div>
     </div>
-    <div id="answers">
+    <div class="row">
+      <div id="answers" class="col-lg-8 col-lg-offset-2 col-md-6 col-md-ofset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+      </div>
     </div>
   </div>
-  <div class="container">
-    <div id="serial-widget" class="input-group">
-      <div class="input-group-addon">Ports</div>
-      <select class="form-control" id="serial-select">
-      </select>
-      <span class="input-group-btn">
-        <button id="choose-serial-port" class="btn btn-default">Choose</button>
-      </span>
+  <nav class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+      <div id="serial-widget" class="input-group">
+        <div class="input-group-addon">Ports</div>
+        <select class="form-control" id="serial-select">
+        </select>
+        <span class="input-group-btn">
+          <button id="choose-serial-port" class="btn btn-default">Choose</button>
+        </span>
+      </div>
     </div>
   </div>
   <script src="frameworks/jquery.min.js"></script>
