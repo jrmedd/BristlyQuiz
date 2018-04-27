@@ -21,6 +21,10 @@ $.getJSON(chrome.runtime.getURL('js/teams.json'), function(teamInfo) {
 
 function displayQuestion() {
   $.getJSON(chrome.runtime.getURL('js/questions.json'), function(questions) {
+    if ((progress +1) > questions.length) {
+      $("#question").html("<h3>That's all the questions!</h3>").hide().fadeIn();
+      return true;
+    }
     currentTeam = teams[progress%teams.length];
     currentQuestion = questions[progress];
     $("#question").html("<h3>For team "+currentTeam+":<br>"+currentQuestion.question+"</h3>").hide().fadeIn();
