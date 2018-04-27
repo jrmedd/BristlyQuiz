@@ -42,7 +42,7 @@ $("#answers").on('click', 'a', function(e){
   $("#answers").hide();
   if (clickedAnswer.hasClass('correct')) {
     advanceTeam(currentTeam);
-    $("#question").html("<h3>That's correct! You move for 2 seconds!</h3>").hide().fadeIn();
+    $("#question").html("<h3>That's correct! You move for 5 seconds!</h3>").hide().fadeIn();
   }
   else if (clickedAnswer.hasClass('incorrect')) {
     $("#question").html("<h3>Too bad, everyone else moves, you stay still!</h3>").hide().fadeIn();

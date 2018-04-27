@@ -1,8 +1,8 @@
 [
   {
-    "question" : "How do we define a function in Python?",
-    "incorrect" : ["fun", "define", "function"],
-    "correct" : "def"
+    "question" : "What gas is used in the laser cutter?",
+    "incorrect" : ["argon", "helium", "hydrogen"],
+    "correct" : "carbon dioxide"
   },
   {
     "question" : "How is the quizmaster communicating with the bristle bots?",
@@ -15,8 +15,23 @@
     "correct" : "fused deposition modelling"
   },
   {
-    "question" : "What does the transistor do in our circuit?",
-    "incorrect" : ["stop things exploding", "lets us use radio", "allows us to use less current to power our motor"],
-    "correct" : "allows us to use more current to power our motor"
+    "question" : "What kind of manufacturing is 3D printing?",
+    "incorrect" : ["subtractive", "divisive", "attractive"],
+    "correct" : "additive"
+  },
+  {
+    "question" : "Your design has to perfect before making it in the Eagle Lab. True or false?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "What does LASER stand for?",
+    "incorrect" : ["large and scary eratic radiation","light and sound erosion radiation","light and spark electric radiation"],
+    "correct" : "light amplification by stimulated emission of radiation"
+  },
+  {
+    "question" : "The Eagle Lab is only for technology products. True or false?",
+    "incorrect" : ["true"],
+    "correct" : "false"
   }
 ]

@@ -4,6 +4,7 @@ import radio
 #set a device ID
 this_device = "A"
 
+radio.config(power=7, channel=22)
 radio.on() #start radio comms
 microbit.pin2.write_digital(0)
 
@@ -16,5 +17,5 @@ while True:
     if received_messages:
         if received_messages == this_device: #first array element will be the ID
             microbit.pin2.write_digital(1)
-            microbit.sleep(2000)
+            microbit.sleep(5000)
             microbit.pin2.write_digital(0)
