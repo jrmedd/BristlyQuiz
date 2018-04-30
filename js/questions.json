@@ -5,7 +5,7 @@
     "correct" : "carbon dioxide"
   },
   {
-    "question" : "How is the quizmaster communicating with the bristle bots?",
+    "question" : "How is the quizmaster communicating with the cup bots?",
     "incorrect" : ["WiFi", "Bluetooth", "USB"],
     "correct" : "Radio"
   },
@@ -26,12 +26,243 @@
   },
   {
     "question" : "What does LASER stand for?",
-    "incorrect" : ["large and scary eratic radiation","light and sound erosion radiation","light and spark electric radiation"],
+    "incorrect" : ["large and scary erratic radiation","light and sound erosion radiation","light and spark electric radiation"],
     "correct" : "light amplification by stimulated emission of radiation"
   },
   {
     "question" : "The Eagle Lab is only for technology products. True or false?",
     "incorrect" : ["true"],
     "correct" : "false"
+  },
+  {
+    "question" : "How many Eagle Labs do we have in the UK?",
+    "incorrect" : ["5", "10", "25"],
+    "correct" : "15"
+  },
+  {
+    "question" : "What year did our Salford Eagle Lab open?",
+    "incorrect" : ["2012", "2014", "2017"],
+    "correct" : "2016"
+  },
+  {
+    "question" : "Eagle Labs is a space to create, innovate and...?",
+    "incorrect" : ["make stuff", "help", "build"],
+    "correct" : "Grow"
+  },
+  {
+    "question" : "Our Salford Eagle Lab is located in?",
+    "incorrect" : ["WhiteSpace", "Avenue HQ", "Codebase"],
+    "correct" : "The Landing"
+  },
+  {
+    "question" : "Barclays Eagle Labs celebrated a birthday last week, what was it?",
+    "incorrect" : ["1st Birthday", "3rd Birthday", "4th Birthday"],
+
+    "correct" : "2nd Birthday"
+  },
+  {
+    "question" : "Subtract the year the Manchester Ship Canal was opened from the birth of MediaCityUK and add the amount of silver coffee pods in the lab, what do you get?",
+    "incorrect" : ["107","132","147"],
+    "correct" : "125"
+  },
+  {
+    "question" : "Our Eagle labs has a cool big brother that help communities to become more tech savvy, what are they called?",
+    "incorrect" : ["Digital Hawks", "Computer Eagles", "binary birds"],
+    "correct" : "Digital Eagles"
+  },
+  {
+  "question" : "Complete the phrase from a few stickers around the lab, Do not unplug doing a ...",
+  "incorrect" : ["update","banana","james","work thing"],
+  "correct" : "science"
+  },
+  {
+    "question" : "When was MediaCityUK born?",
+    "incorrect" : ["2017","2006","2005"],
+    "correct" : "2007"
+  },
+  {
+    "question" : "What's the blueprint in the picture frame show?",
+    "incorrect" : ["game pad","joycon","death star","arcade machine"],
+    "correct" : "joystick"
+  },
+  {
+    "question" : "What's the Eagle Lab Salford Twitter handle?",
+    "incorrect" : ["eagle_lab","eaglelabsalford","elsalford","eagle_lab_sal","eagle_labs_salford","eagle_lab_salford"],
+    "correct" : "eagle_labs_sal"
+  },
+  {
+    "question" : "What flavour are the Pi's in the lab?",
+    "incorrect" : ["strawberry","blueberry","apple"],
+    "correct" : "raspberry"
+  },
+  {
+    "question" : "What's the Eagle Lab Salford Twitter handle?",
+    "incorrect" : ["eaglelabsalford","eagle_lab_sal","eagle_labs_salford","eagle_lab_salford"],
+    "correct" : "eagle_labs_sal"
+  },
+  {
+    "question" : "What does the word robot mean, from the Czech word robota?",
+    "incorrect" : ["mechanical machine","non-human","worker"],
+    "correct" : "forced labor"
+  },
+  {
+    "question" : "Everyday the human brain generates more electrical impulses than all the telephone wires, in the world, put together. True or False?",
+    "incorrect" : ["false"],
+    "correct" : "true"
+  },
+  {
+    "question" : "The human brain can power a light bulb. True or False?",
+    "incorrect" : ["false"],
+    "correct" : "true"
+  },
+  {
+    "question" : "Exercise makes you smarter. True or False?",
+    "incorrect" : ["false"],
+    "correct" : "true"
+  },
+  {
+    "question" : "A pixel is the smallest controllable element on a screen. True or False?",
+    "incorrect" : ["false"],
+    "correct" : "true"
+  },
+  {
+    "question" : "Pac-Man, the original arcade game was released in the 1970’s. True or False?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "ROM stands for Read Only Machine. True or False?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "A 3D printer extrudes plastic at temperatures below 180˚C. True or False?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "A Micro:bit has 24 red LED lights. True or False?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "How many buttons does a Micro:bit have?",
+    "incorrect" : ["1","2","4"],
+    "correct" : "3"
+  },
+  {
+    "question" : "A Micro:bit has WiFi. True or False?",
+    "incorrect" : ["true"],
+    "correct" : "false"
+  },
+  {
+    "question" : "A Micro:bit can tell you the temperature of the room it’s in. True or False?",
+    "incorrect" : ["false"],
+    "correct" : "true"
+  },
+  {
+    "question" : "What year was Google founded in?",
+    "incorrect" : ["1997","1987","2007"],
+    "correct" : "1998"
+  },
+  {
+    "question" : "What year was the first iPhone released?",
+    "incorrect" : ["2005","2006","2008"],
+    "correct" : "2007"
+  },
+  {
+    "question" : "What does 3D stand for?",
+    "incorrect" : ["three-doors","third-depth","three-amigos"],
+    "correct" : "three-dimensional"
+  },
+  {
+    "question" : "What does CAD stand for?",
+    "incorrect" : ["Computer-Assisted Design","Computer-Advanced Design","Computer-Aware Design"],
+    "correct" : "Computer-Aided Design"
+  },
+  {
+    "question" : "What file formats does Eagle Labs generally use for 3D printing?",
+    "incorrect" : ["3DP","PNG","JPG"],
+    "correct" : "STL"
+  },
+  {
+    "question" : "What technology sector does Eagle Lab Salford focus on?",
+    "incorrect" : ["LawTech","Artificial Intelligence","FinTech"],
+    "correct" : "MedTech"
+  },
+  {
+    "question" : "Potentially, how much per minute of surgery could 3D printing save the NHS?",
+    "incorrect" : ["£40","£50","£70"],
+    "correct" : "£60"
+  },
+  {
+    "question" : "What does AR stand for?",
+    "incorrect" : ["Average Reality","Assisted Reality","Augmented Rationality"],
+    "correct" : "Augmented Reality"
+  },
+  {
+    "question" : "What does IoT stand for?",
+    "incorrect" : ["Interesting Otherworldly Thoughts","Investment of Things","Illuminating of Technology"],
+    "correct" : "Internet of Things"
+  },
+  {
+    "question" : "What does VR stand for?",
+    "incorrect" : ["Various Reality","Virtual Robotics","Volumetric Reasoning"],
+    "correct" : "Virtual Reality"
+  },
+  {
+    "question" : "What does LED stand for?",
+    "incorrect" : ["Light Evolving Dictation","Lemon Eating Dog","Long Energy Device"],
+    "correct" : "Light Emitting Diode"
+  },
+  {
+    "question" : "What does GPS stand for?",
+    "incorrect" : ["Global Pointing System","Grid Pixel System","Geographical Photon Support"],
+    "correct" : "Global Positioning System"
+  },
+  {
+    "question" : "Firefox, Opera, Chrome, Safari and Explorer are types of what?",
+    "incorrect" : ["Spaceships","Cars","Suits"],
+    "correct" : "Web browsers"
+  },
+  {
+    "question" : "Solar power generates electricity from what source?",
+    "incorrect" : ["The Moon","Street Lights","Plant energy"],
+    "correct" : "The Sun"
+  },
+  {
+    "question" : "In computing, keyboards are used as input devices. True or false?",
+    "incorrect" : ["False"],
+    "correct" : "True"
+  },
+  {
+    "question" : "What does the abbreviation WWW stand for?",
+    "incorrect" : ["World Wrestling Wonder","Wandering Wizard Wand","Working World Watch"],
+    "correct" : "World Wide Web"
+  },
+  {
+    "question" : "Nintendo was founded after the year 1900. True or false?",
+    "incorrect" : ["True"],
+    "correct" : "False"
+  },
+  {
+    "question" : "In terms of computing, what does CPU stand for?",
+    "incorrect" : ["Computer Power Unit","Capital Production Unicorn","Common Programming Unification"],
+    "correct" : "Central Processing Unit"
+  },
+  {
+    "question" : "Gold is not a good conductor of electricity? True or false?",
+    "incorrect" : ["True"],
+    "correct" : "False"
+  },
+  {
+    "question" : "In electricity, voltage is measured in volts while current is measured in what?",
+    "incorrect" : ["Curts","Percentage","Degrees"],
+    "correct" : "Amps"
+  },
+  {
+    "question" : "DB in computer abbreviation usually means?",
+    "incorrect" : ["Data Bytes","Defence Bots","Dog Biscuits"],
+    "correct" : "Database"
   }
 ]
