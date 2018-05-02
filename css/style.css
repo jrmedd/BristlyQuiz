@@ -9,12 +9,21 @@ body {
   color: #fff;
 }
 #answers a {
-  color: #FABE10;
+  background: white;
+  color: #00B6FF;
+  padding: .1em;
   font-size: 1.5em;
 }
 #answers {
   display: none;
 }
+
+.actual {
+  background-color: #ffffff;
+  color: #42b7fb;
+  padding: .1em;
+}
+
 select {
   -webkit-appearance: none;
   -webkit-border-radius: 0px;

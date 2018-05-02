@@ -49,7 +49,7 @@ $("#answers").on('click', 'a', function(e){
     $("#question").html("<h3>That's correct! You move for 5 seconds!</h3>").hide().fadeIn();
   }
   else if (clickedAnswer.hasClass('incorrect')) {
-    $("#question").html("<h3>Too bad, everyone else moves, you stay still!</h3>").hide().fadeIn();
+    $("#question").html("<h3>Too bad, everyone else moves, you stay still! The correct answer was: <span class='actual'>"+currentQuestion.correct+"</span></h3>").hide().fadeIn();
     $.each(teams, function(idx, teamName) {
       if (teamName != currentTeam) {
         advanceTeam(teamName);
