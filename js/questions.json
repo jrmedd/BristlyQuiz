@@ -37,7 +37,7 @@
   {
     "question" : "How many Eagle Labs do we have in the UK?",
     "incorrect" : ["5", "10", "25"],
-    "correct" : "15"
+    "correct" : "14"
   },
   {
     "question" : "What year did our Salford Eagle Lab open?",
@@ -94,11 +94,6 @@
     "question" : "What flavour are the Pi's in the lab?",
     "incorrect" : ["strawberry","blueberry","apple"],
     "correct" : "raspberry"
-  },
-  {
-    "question" : "What's the Eagle Lab Salford Twitter handle?",
-    "incorrect" : ["eaglelabsalford","eagle_lab_sal","eagle_labs_salford","eagle_lab_salford"],
-    "correct" : "eagle_labs_sal"
   },
   {
     "question" : "What does the word robot mean, from the Czech word robota?",
@@ -264,5 +259,65 @@
     "question" : "DB in computer abbreviation usually means?",
     "incorrect" : ["Data Bytes","Defence Bots","Dog Biscuits"],
     "correct" : "Database"
+  },
+  {
+    "question" : "Hackers who attempt to do good through hacking are called what?",
+    "incorrect" : ["black hats", "red hats", "green hats"],
+    "correct" : "white hats"
+  },
+ {
+    "question" : "In computing what is a Nibble?",
+    "incorrect" : ["8 bits", "1 bit", "1/2 bit"],
+    "correct" : "4 bits"
+  },
+ {
+    "question" : "Metadata means?",
+    "incorrect" : ["mega data", "informational data", "metalogical data"],
+    "correct" : "data about data"
+  },
+ {
+    "question" : "What is a magnetic strip?",
+    "incorrect" : ["Used to stick stuff to the fridge"],
+    "correct" : "A way of storing data into credit and debit cards"
+  },
+ {
+    "question" : "In computer science what is CLI?",
+    "incorrect" : ["computer language interface", "common language input"],
+    "correct" : "command line interface"
+  },
+ {
+    "question" : "In computer science what is GUI?",
+    "incorrect" : ["general user interface", "gaming user interface"],
+    "correct" : "graphical user interface"
+  },
+ {
+    "question" : "Which of these is most likely to use Haptic Feedback?",
+    "incorrect" : ["a shower", "a fire alarm"],
+    "correct" : "a game controller"
+  },
+ {
+    "question" : "Which of these is not an operating system (OS)?",
+    "incorrect" : ["iOS", "Linux", "Windows"],
+    "correct" : "ApplePieOS"
+  },
+ {
+    "question" : "A Blue-ray Disc can hold up to?",
+    "incorrect" : ["30GB", "40GB"],
+    "correct" : "50GB"
+  },
+  {
+    "question" : "The image file PNG format stands for?",
+    "incorrect" : ["Printable Network Graphics", "Pictures Not Graphics"],
+    "correct" : "Portable Network Graphics"
+  },
+  {
+    "question" : "Which of these is an example of a Massive Multiplayer Online Role Play Games (MMORPG)?",
+    "incorrect" : ["Mario Kart 8", "Candy Crush Saga"],
+    "correct" : "World of Warcraft"
+  },
+  {
+    "question" : "Who was the first British astronaut?",
+    "incorrect" : ["Tim Peake", "Thomas Kane", "Neil Armstrong"],
+    "correct" : "Helen Sharman"
   }
 ]
