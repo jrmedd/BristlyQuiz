@@ -46,14 +46,13 @@ function convertStringToArrayBuffer(str) {
 };
 
 var incoming = "";
+
 var onReceiveCallback = function(info) {
   if (info.connectionId == connectionId && info.data) {
     incoming += decoder.decode(info.data);
     if (incoming.slice(-1) == "\n") {
-      if(incoming.length == 2) {
-        $("#"+incoming[0]).trigger("click");
-        incoming = "";
-      };
+      $("#"+incoming[0]).trigger("click");
+      incoming = "";
     }
   }
 };
