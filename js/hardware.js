@@ -3,7 +3,13 @@ var connectionId = -1;
 function onGetDevices(ports){
   if (ports.length > 0) {
     $.each(ports, function(key, value) {
-      $('#serial-select').append($('<option></option>').attr('value', value.path).text(value.path));
+      if (value.path.includes("tty.usbmodem")) {
+        $('#serial-select').append($('<option selected="selected"></option>').attr('value', value.path).text(value.path));
+        chrome.serial.connect(value.path, {bitrate: 115200}, onConnect);
+      }
+      else {
+        $('#serial-select').append($('<option></option>').attr('value', value.path).text(value.path));
+      }
     });
   }
   else {
