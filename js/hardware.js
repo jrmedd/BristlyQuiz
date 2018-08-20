@@ -1,9 +1,16 @@
 var connectionId = -1;
+var decoder = new TextDecoder("utf-8");
 
 function onGetDevices(ports){
   if (ports.length > 0) {
     $.each(ports, function(key, value) {
-      $('#serial-select').append($('<option></option>').attr('value', value.path).text(value.path));
+      if (value.path.includes("tty.usbmodem")) {
+        $('#serial-select').append($('<option selected="selected"></option>').attr('value', value.path).text(value.path));
+        chrome.serial.connect(value.path, {bitrate: 115200}, onConnect);
+      }
+      else {
+        $('#serial-select').append($('<option></option>').attr('value', value.path).text(value.path));
+      }
     });
   }
   else {
@@ -13,6 +20,7 @@ function onGetDevices(ports){
 function onConnect(connectionInfo){
   console.log(connectionInfo);
   connectionId = connectionInfo.connectionId;
+  chrome.serial.onReceive.addListener(onReceiveCallback);
 };
 
 $('#choose-serial-port').on('click', function(){
@@ -35,4 +43,17 @@ function convertStringToArrayBuffer(str) {
     bufView[i]=str.charCodeAt(i);
   }
   return buf;
+};
+
+var incoming = "";
+var onReceiveCallback = function(info) {
+  if (info.connectionId == connectionId && info.data) {
+    incoming += decoder.decode(info.data);
+    if (incoming.slice(-1) == "\n") {
+      if(incoming.length == 2) {
+        $("#"+incoming[0]).trigger("click");
+        incoming = "";
+      };
+    }
+  }
 };

@@ -5,6 +5,8 @@ var currentTeam;
 var currentQuestion;
 var progress = 0;
 
+var ab_buttons = ['A', 'B'];
+
 var loadedQuestions;
 
 /*Load questions from JSON and do a Fisher-Yates shuffle, load teams from JSON and load a question*/
@@ -30,8 +32,8 @@ function getRandomArbitrary(min, max) {
 
 /*advance team function*/
 function advanceTeam(team) {
-  var teamCommand = "move_team('" + team + "')\r";
-  writeSerial(teamCommand);
+  //var teamCommand = "move_team('" + team + "')\r";
+  writeSerial(team+'\n');
 }
 
 /*Display question function*/
@@ -42,15 +44,24 @@ function displayQuestion() {
   }
   currentTeam = teams[progress%teams.length];
   currentQuestion = loadedQuestions[progress];
-  $("#question").html("<h3>For team "+currentTeam+":<br>"+currentQuestion.question+"</h3>").hide().fadeIn();
+  $("#question").html("<h3>For contestant "+currentTeam+":<br>"+currentQuestion.question+"</h3>").hide().fadeIn();
   var randomIndex = getRandomArbitrary(0, currentQuestion.incorrect.length)|0;
   $("#answers").empty();
   $.each(currentQuestion.incorrect, function(idx, value){
     if (idx == randomIndex) {
-      $("#answers").append('<a class="correct" href="#">'+currentQuestion.correct+'</a><br>');
+      $("#answers").append('<p><a class="answer correct" href="#">'+currentQuestion.correct+'</a></p>');
     }
-    $("#answers").append('<a class="incorrect" href="#">'+value+'</a><br>');
+    $("#answers").append('<p><a class="answer incorrect" href="#">'+value+'</a></p>');
   });
+  $('.incorrect').each(function(idx, value){
+    if ($('.incorrect').length > 1) {
+      $(this).parent().remove();
+    }
+  });
+  $('.answer').each(function(idx, val){
+    $(this).html(ab_buttons[idx] + ') ' + $(this).html());
+    $(this).attr('id', ab_buttons[idx]);
+  })
   $("#answers").fadeIn();
 }
 
