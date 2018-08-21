@@ -4,7 +4,7 @@ var decoder = new TextDecoder("utf-8");
 function onGetDevices(ports){
   if (ports.length > 0) {
     $.each(ports, function(key, value) {
-      if (value.path.includes("tty.usbmodem")) {
+      if (value.path.includes("ttyACM0")) {
         $('#serial-select').append($('<option selected="selected"></option>').attr('value', value.path).text(value.path));
         chrome.serial.connect(value.path, {bitrate: 115200}, onConnect);
       }
