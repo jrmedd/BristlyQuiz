@@ -8,12 +8,31 @@ body {
   background: #00B7FF;
   color: #fff;
 }
+
+#main-wrapper {
+  min-height: 100%;
+  min-height: 100vh;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+#quiz-area {
+  min-width: 100%;
+}
+
 #answers a {
   background: white;
   color: #00B6FF;
   padding: .1em;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
+
+#question h3 {
+  font-size: 3em;
+}
+
 #answers {
   display: none;
 }
@@ -31,4 +50,15 @@ select {
 
 nav.navbar.navbar-default.navbar-fixed-bottom {
   padding: 0.55em;
+}
+
+#config-bar {
+  opacity: 0;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+#config-bar:hover {
+  opacity: 1;
 }
