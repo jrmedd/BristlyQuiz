@@ -45,23 +45,20 @@ function displayQuestion() {
   currentTeam = teams[progress%teams.length];
   currentQuestion = loadedQuestions[progress];
   $("#question").html("<h3>For contestant "+currentTeam+":<br>"+currentQuestion.question+"</h3>").hide().fadeIn();
-  var randomIndex = getRandomArbitrary(0, currentQuestion.incorrect.length)|0;
+  var incorrectAnswer = [currentQuestion.incorrect[getRandomArbitrary(0,currentQuestion.incorrect.length)|0]]
+  var randomIndex = getRandomArbitrary(0,2)|0;
   $("#answers").empty();
-  $.each(currentQuestion.incorrect, function(idx, value){
-    if (idx == randomIndex) {
-      $("#answers").append('<p><a class="answer correct" href="#">'+currentQuestion.correct+'</a></p>');
-    }
-    $("#answers").append('<p><a class="answer incorrect" href="#">'+value+'</a></p>');
-  });
-  $('.incorrect').each(function(idx, value){
-    if ($('.incorrect').length > 1) {
-      $(this).parent().remove();
-    }
-  });
+  $("#answers").append('<p><a class="answer correct" href="#">'+currentQuestion.correct+'</a></p>');
+  if (randomIndex == 1) {
+    $("#answers").prepend('<p><a class="answer incorrect" href="#">'+incorrectAnswer+'</a></p>');
+  }
+  else {
+    $("#answers").append('<p><a class="answer incorrect" href="#">'+incorrectAnswer+'</a></p>');
+  }
   $('.answer').each(function(idx, val){
     $(this).html(ab_buttons[idx] + ') ' + $(this).html());
     $(this).attr('id', ab_buttons[idx]);
-  })
+  });
   $("#answers").fadeIn();
 }
 

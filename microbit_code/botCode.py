@@ -2,7 +2,7 @@ import microbit
 import radio
 
 #set a device ID
-this_device = "A"
+this_device = "B"
 
 radio.config(power=7, channel=22)
 radio.on() #start radio comms
